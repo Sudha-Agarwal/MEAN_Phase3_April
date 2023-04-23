@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    meta(name='viewport', content = 'width=device-width, initial-scale=1.0')
+    link(rel = 'stylesheet', href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css",crossorigin="anonymous")
+    
+  body
+    nav.navbar.navbar-default   
+      .container-fluid 
+        .navbar-header 
+        a.navbar-brand(href="#") My App 
+            div#navbar.collapse.navbar-collapse 
+              ul.nav.navbar-nav
+                li.active
+                  a(href='/') Home 
+                li  
+                  a(href="/about") About
+                li  
+                  a(href="/contact") Contact Us
+                li 
+                  a(href='/meals') Meals
+  div.container  
+    block content
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js", crossorigin='anonymous')

@@ -1,0 +1,14 @@
+extends layout 
+block content 
+    table.table.table-striped 
+        thead 
+            tr  
+                th Name 
+                th Type 
+                th Price 
+        tbody 
+            each meal in meals
+                tr 
+                    td= meal.name 
+                    td= meal.type 
+                    th= meal.price

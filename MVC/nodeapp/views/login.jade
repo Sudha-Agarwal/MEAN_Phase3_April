@@ -1,0 +1,14 @@
+extends layout 
+block content 
+    form.form-horizontal(method='post', action='login-form')
+        .form-group 
+            .col-md-10 
+                input.form-control(type='text',id='name',name='name')
+        .form-group 
+            .col-md-10 
+                input.form-control(type='email',id='email',name='emaikl')
+
+        .form-group 
+            .col-md-offset-2.col-md-10 
+                button.btn.btn-primary(type='submit') Submit
+

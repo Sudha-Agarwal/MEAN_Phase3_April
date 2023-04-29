@@ -30,11 +30,16 @@ app.get('/contact',(req,res) => {
   res.render('contact',{title: 'Contact us'});
 });
 
+app.get('/login', (req,res) => {
+  res.render('login');
+})
+
 
 app.use(router);
 const main = require("./main/main");
 
 main.meals(app,router);
+main.login(app,router);
 
 
 

@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1 Todo List 
+    form(action = '/todos' , method = "post")
+      input(type="text", name="title")
+      input(type="text", name= "description")
+      button(type="submit") Add Todo
+
+    hr
+
+  each todo in todos 
+    div 
+      h3= todo.title 
+      p= todo.description 
+      p Status: #{todo.status}
+
+      if todo.status === 'pending'
+        a(href='/todos/' + todo._id + '/update') Mark as completed 
+        a(href = '/todos/' + todo._id + '/delete') Delete

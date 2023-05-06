@@ -65,6 +65,22 @@ async function insertData(){
     }
 }
 
-insertData();
+async function getData(){
+    try{
+        const result = await Course.findOne({title:'Introduction to MongoDB'});
+        console.log(result);
+    }
+    catch(err){
+        console.log(err)
+    }
+
+    finally{
+        await mongoose.disconnect();
+        console.log("disconnected")
+    }
+
+}
+//insertData();
+getData();
 
 

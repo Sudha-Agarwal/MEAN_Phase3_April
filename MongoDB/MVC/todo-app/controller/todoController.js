@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const ObjectId = mongoose.Types.ObjectId;
 const password = process.env.ATLAS_PASSWORD;
 
+const uri = 'mongodb+srv://sudhamangla:ifbAgvkraul4n6IC@cluster0.mgrqz5r.mongodb.net/mydb?retryWrites=true&w=majority';
 
 mongoose.connect(`mongodb+srv://sudhaagarwal84:${password}@cluster0.gheldac.mongodb.net/?retryWrites=true&w=majority`)
 .then(() => {

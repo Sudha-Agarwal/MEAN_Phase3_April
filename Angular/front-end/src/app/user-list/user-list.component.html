@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-md-12">
+      <h1>User List</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.name }}</td>
+            <td>{{ user.age }}</td>
+            <td>{{ user.email }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item" [class.disabled]="currentPage === 1">
+            <a class="page-link"  (click)="previousPage()">Previous</a>
+          </li>
+          <li class="page-item" [class.active]="pageNumber === currentPage" *ngFor="let pageNumber of totalPagesArray">
+            <a class="page-link"  (click)="goToPage(pageNumber)">{{ pageNumber }}</a>
+          </li>
+          <li class="page-item" [class.disabled]="currentPage === totalPages">
+            <a class="page-link" (click)="nextPage()">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  
+  
+  

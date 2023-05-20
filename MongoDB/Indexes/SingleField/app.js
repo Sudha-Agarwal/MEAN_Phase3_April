@@ -1,10 +1,11 @@
 const { MongoClient }  = require('mongodb');
 
-const uri = "mongodb://localhost:27017/mydb";
+const uri = "mongodb://localhost:27017";
+//const uri = 'mongodb+srv://sudhamangla:ifbAgvkraul4n6IC@cluster0.mgrqz5r.mongodb.net/mydb?retryWrites=true&w=majority';
 
 const client = new MongoClient(uri);
 
-client.connect().then(() => console.log("DB connected"));
+client.connect({useUnifiedTopology:true}).then(() => console.log("DB connected"));
 
 const courses = [
     {

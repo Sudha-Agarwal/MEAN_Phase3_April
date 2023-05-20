@@ -1,0 +1,424 @@
+[{
+  "_id": {
+    "$oid": "645af175b0e249ee5093795a"
+  },
+  "name": "MongoDB for Beginners",
+  "coursedetails": {
+    "description": "An introduction to MongoDB for beginners",
+    "duration": 10
+  },
+  "instructor": {
+    "name": "John Doe",
+    "email": "johndoe@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645af175b0e249ee5093795b"
+  },
+  "name": "MongoDB for Developers",
+  "coursedetails": {
+    "description": "A course on MongoDB for developers",
+    "duration": 20
+  },
+  "instructor": {
+    "name": "Jane Smith",
+    "email": "janesmith@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645af175b0e249ee5093795c"
+  },
+  "name": "MongoDB for Administrators",
+  "coursedetails": {
+    "description": "A course on MongoDB for administrators",
+    "duration": 15
+  },
+  "instructor": {
+    "name": "Bob Johnson",
+    "email": "bobjohnson@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645af291d4e8dd74a8984f35"
+  },
+  "name": "MongoDB for Beginners",
+  "coursedetails": {
+    "description": "An introduction to MongoDB for beginners",
+    "duration": 10
+  },
+  "instructor": {
+    "name": "John Doe",
+    "email": "johndoe@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645af291d4e8dd74a8984f36"
+  },
+  "name": "MongoDB for Developers",
+  "coursedetails": {
+    "description": "A course on MongoDB for developers",
+    "duration": 20
+  },
+  "instructor": {
+    "name": "Jane Smith",
+    "email": "janesmith@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645af291d4e8dd74a8984f37"
+  },
+  "name": "MongoDB for Administrators",
+  "coursedetails": {
+    "description": "A course on MongoDB for administrators",
+    "duration": 15
+  },
+  "instructor": {
+    "name": "Bob Johnson",
+    "email": "bobjohnson@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b1714fbaad5fbaf19be14"
+  },
+  "name": "MongoDB for Beginners",
+  "coursedetails": {
+    "duration": 30,
+    "topics": [
+      "MongoDB basics",
+      "Data modeling",
+      "Indexes"
+    ]
+  },
+  "instructor": {
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b1714fbaad5fbaf19be15"
+  },
+  "name": "Advanced MongoDB",
+  "coursedetails": {
+    "duration": 60,
+    "topics": [
+      "Aggregation framework",
+      "Replication",
+      "Sharding"
+    ]
+  },
+  "instructor": {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b1714fbaad5fbaf19be16"
+  },
+  "name": "MongoDB for Node.js Developers",
+  "coursedetails": {
+    "duration": 45,
+    "topics": [
+      "Node.js",
+      "MongoDB driver",
+      "Mongoose"
+    ]
+  },
+  "instructor": {
+    "name": "Bob Johnson",
+    "email": "bob.johnson@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b59be81e0cd5bf5343b5a"
+  },
+  "name": "MongoDB for Beginners",
+  "coursedetails": {
+    "duration": 30,
+    "topics": [
+      "MongoDB basics",
+      "Data modeling",
+      "Indexes"
+    ]
+  },
+  "instructor": {
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b59be81e0cd5bf5343b5b"
+  },
+  "name": "Advanced MongoDB",
+  "coursedetails": {
+    "duration": 60,
+    "topics": [
+      "Aggregation framework",
+      "Replication",
+      "Sharding"
+    ]
+  },
+  "instructor": {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b59be81e0cd5bf5343b5c"
+  },
+  "name": "MongoDB for Node.js Developers",
+  "coursedetails": {
+    "duration": 45,
+    "topics": [
+      "Node.js",
+      "MongoDB driver",
+      "Mongoose"
+    ]
+  },
+  "instructor": {
+    "name": "Bob Johnson",
+    "email": "bob.johnson@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b5a5c648894332f271c9a"
+  },
+  "name": "MongoDB for Beginners",
+  "coursedetails": {
+    "duration": 30,
+    "topics": [
+      "MongoDB basics",
+      "Data modeling",
+      "Indexes"
+    ]
+  },
+  "instructor": {
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b5a5c648894332f271c9b"
+  },
+  "name": "Advanced MongoDB",
+  "coursedetails": {
+    "duration": 60,
+    "topics": [
+      "Aggregation framework",
+      "Replication",
+      "Sharding"
+    ]
+  },
+  "instructor": {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b5a5c648894332f271c9c"
+  },
+  "name": "MongoDB for Node.js Developers",
+  "coursedetails": {
+    "duration": 45,
+    "topics": [
+      "Node.js",
+      "MongoDB driver",
+      "Mongoose"
+    ]
+  },
+  "instructor": {
+    "name": "Bob Johnson",
+    "email": "bob.johnson@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b5a75efae8311101f37dd"
+  },
+  "name": "MongoDB for Beginners",
+  "coursedetails": {
+    "duration": 30,
+    "topics": [
+      "MongoDB basics",
+      "Data modeling",
+      "Indexes"
+    ]
+  },
+  "instructor": {
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b5a75efae8311101f37de"
+  },
+  "name": "Advanced MongoDB",
+  "coursedetails": {
+    "duration": 60,
+    "topics": [
+      "Aggregation framework",
+      "Replication",
+      "Sharding"
+    ]
+  },
+  "instructor": {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b5a75efae8311101f37df"
+  },
+  "name": "MongoDB for Node.js Developers",
+  "coursedetails": {
+    "duration": 45,
+    "topics": [
+      "Node.js",
+      "MongoDB driver",
+      "Mongoose"
+    ]
+  },
+  "instructor": {
+    "name": "Bob Johnson",
+    "email": "bob.johnson@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b5a8df5cb8e92efed5b5b"
+  },
+  "name": "MongoDB for Beginners",
+  "coursedetails": {
+    "duration": 30,
+    "topics": [
+      "MongoDB basics",
+      "Data modeling",
+      "Indexes"
+    ]
+  },
+  "instructor": {
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b5a8df5cb8e92efed5b5c"
+  },
+  "name": "Advanced MongoDB",
+  "coursedetails": {
+    "duration": 60,
+    "topics": [
+      "Aggregation framework",
+      "Replication",
+      "Sharding"
+    ]
+  },
+  "instructor": {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b5a8df5cb8e92efed5b5d"
+  },
+  "name": "MongoDB for Node.js Developers",
+  "coursedetails": {
+    "duration": 45,
+    "topics": [
+      "Node.js",
+      "MongoDB driver",
+      "Mongoose"
+    ]
+  },
+  "instructor": {
+    "name": "Bob Johnson",
+    "email": "bob.johnson@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b5ae5fae9f08be4607591"
+  },
+  "name": "MongoDB for Beginners",
+  "coursedetails": {
+    "duration": 30,
+    "topics": [
+      "MongoDB basics",
+      "Data modeling",
+      "Indexes"
+    ]
+  },
+  "instructor": {
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b5ae5fae9f08be4607592"
+  },
+  "name": "Advanced MongoDB",
+  "coursedetails": {
+    "duration": 60,
+    "topics": [
+      "Aggregation framework",
+      "Replication",
+      "Sharding"
+    ]
+  },
+  "instructor": {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "645b5ae5fae9f08be4607593"
+  },
+  "name": "MongoDB for Node.js Developers",
+  "coursedetails": {
+    "duration": 45,
+    "topics": [
+      "Node.js",
+      "MongoDB driver",
+      "Mongoose"
+    ]
+  },
+  "instructor": {
+    "name": "Bob Johnson",
+    "email": "bob.johnson@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "64684aebf3437e8a091d395c"
+  },
+  "name": "MongoDB for Administrators",
+  "coursedetails": {
+    "description": "A course on MongoDB for administrators",
+    "duration": 15
+  },
+  "instructor": {
+    "name": "Bob Johnson",
+    "email": "bobjohnson@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "64684aebf3437e8a091d395a"
+  },
+  "name": "MongoDB for Beginners",
+  "coursedetails": {
+    "description": "An introduction to MongoDB for beginners",
+    "duration": 10
+  },
+  "instructor": {
+    "name": "John Doe",
+    "email": "johndoe@example.com"
+  }
+},{
+  "_id": {
+    "$oid": "64684aebf3437e8a091d395b"
+  },
+  "name": "MongoDB for Developers",
+  "coursedetails": {
+    "description": "A course on MongoDB for developers",
+    "duration": 20
+  },
+  "instructor": {
+    "name": "Jane Smith",
+    "email": "janesmith@example.com"
+  }
+}]

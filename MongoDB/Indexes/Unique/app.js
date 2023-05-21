@@ -5,9 +5,10 @@ const uri = 'mongodb+srv://sudhamangla:ifbAgvkraul4n6IC@cluster0.mgrqz5r.mongodb
 
 const client = new MongoClient(uri);
 
-client.connect({useUnifiedTopology:true}).then(() => console.log("DB connected"));
+client.connect({useUnifiedTopology:true}).then(() => {
+    console.log("DB connected");
 
-const db = client.db('mydb');
+    const db = client.db('mydb');
 const users = db.collection("users");
 
 //create a unique index on the email field
@@ -23,5 +24,10 @@ users.createIndex({email : 1}, {unique: true, background: true})
 users.createIndex({age: 1},
     {partialFilterExpression : {age: {$gt:25}}})
 .catch(err => console.log(err));
+
+
+});
+
+
 
 

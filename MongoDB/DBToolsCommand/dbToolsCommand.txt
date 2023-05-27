@@ -1,0 +1,7 @@
+mongodump --uri mongodb+srv://sudhamangla:ifbAgvkraul4n6IC@cluster0.mgrqz5r.mongodb.net/ --db mydb --out C:\All_Works\SimpliLearn\mongodb_dump
+
+mongorestore C:\All_Works\SimpliLearn\mongodb_dump -- restores the data on local mongodb server running on localhost
+
+mongoexport --host localhost --port 27017 --db mydb --collection users --out C:\All_Works\SimpliLearn\mongodexport_data.json
+
+mongoimport --uri mongodb+srv://sudhamangla:ifbAgvkraul4n6IC@cluster0.mgrqz5r.mongodb.net/ --db mydb --collection imported_data --file C:\All_Works\SimpliLearn\mongodexport_data.json

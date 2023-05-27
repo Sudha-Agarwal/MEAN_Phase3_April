@@ -1,0 +1,77 @@
+rs.initiate(
+  {
+    _id: "csrs",
+    configsvr: true,
+    members: [
+      { _id : 0, host : "localhost:27001" },
+      { _id : 1, host : "localhost:27002" },
+      { _id : 2, host : "localhost:27003" }
+    ]
+  }
+)
+
+
+rs.initiate(
+  {
+    _id : "sh01",
+    members: [
+      { _id : 0, host : "localhost:27101" },
+      { _id : 1, host : "localhost:27102" }    
+    ]
+  }
+)
+
+
+rs.initiate(
+  {
+    _id : "sh02",
+    members: [
+      { _id : 0, host : "localhost:27201" },
+      { _id : 1, host : "localhost:27202" }    
+    ]
+  }
+)
+
+start mongos server:
+mongos --config <config-file-path>
+
+run these commands from mongos mongoshell
+ mongosh --port 27000
+
+sh.addShard("sh01/localhost:27101,localhost:27102")
+
+sh.addShard("sh02/localhost:27201,localhost:27202")
+
+
+sh.status()
+use yourDatabase
+sh.enableSharding("mydb")
+db.yourCollection.createIndex({ name: "hashed" })
+
+use admin
+sh.shardCollection("mydb.users", { "name": "hashed" })
+
+
+db.users.insert({ name: "Document 1" })
+db.users.insert({ name: "Document 2" })
+db.users.insert({ name: "Document 3" })
+
+db.users.getShardDistribution()
+
+//while reading the data
+db.setProfilingLevel(0)
+db.users.find({name: "Document 1"}).explain()
+
+
+
+
+Replica tag set
+
+conf = rs.conf();
+conf.members[0].tags = { "dc": "east", "usage": "production" };
+conf.members[1].tags = { "dc": "east", "usage": "reporting" };
+conf.members[2].tags = { "dc": "west", "usage": "production" };
+rs.reconfig(conf);
+
+hidden
+rs.add({ host: "<hidden_node_host>", priority: 0, hidden: true })

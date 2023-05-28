@@ -1,7 +1,7 @@
 const { MongoClient }  = require('mongodb');
 
-//const uri = "mongodb://localhost:27017";
-const uri = 'mongodb+srv://sudhamangla:ifbAgvkraul4n6IC@cluster0.mgrqz5r.mongodb.net?retryWrites=true&w=majority';
+const uri = "mongodb://127.0.0.1:27017";
+//const uri = 'mongodb+srv://sudhamangla:ifbAgvkraul4n6IC@cluster0.mgrqz5r.mongodb.net?retryWrites=true&w=majority';
 
 async function runTransaction(){
     const client = new MongoClient(uri);

@@ -1,0 +1,10 @@
+<div *ngIf="loggedIn; else loginTemplate">
+  <h2>Welcome, {{ username }}!</h2>
+  <button (click)="logout()">Logout</button>
+  <br><br>
+  <h3>Protected Route Response:</h3>
+  <p>{{ protectedData }}</p>
+</div>
+<ng-template #loginTemplate>
+  <app-login></app-login>
+</ng-template>

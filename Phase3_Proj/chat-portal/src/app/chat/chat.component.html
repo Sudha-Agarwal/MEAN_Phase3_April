@@ -1,0 +1,33 @@
+<div *ngIf="loggedIn">
+  <h2>Welcome, {{ username }}!</h2>
+  <h3>Chat Room: {{ room }}</h3>
+  <button (click)="leaveChatRoom()">Leave Chat Room</button>
+  <button (click)="logout()">Logout</button>
+  <div>
+    <h2>Already Joined Users</h2>
+    <ul>
+      <li *ngFor="let user of joinedUsers">{{ user }}</li>
+    </ul>
+    <div *ngIf = "newJoinedUser">
+      <p>New User Joined  {{newJoinedUser}}</p>
+    </div>
+    <div *ngIf = "userleft">
+      <p>{{userleft}} Left the room</p>
+    </div>
+  </div>
+  <div class="chat-container">
+    <div class="messages">
+      <div *ngFor="let message of chatMessages">
+        <p><strong>{{ message.user }}</strong>: {{ message.content }}</p>
+        <p class="timestamp">{{ message.timestamp | date: 'yyyy-MM-dd HH:mm:ss' }}</p>
+      </div>
+    </div>   
+    <form (submit)="sendMessage()">
+      <input type="text" name = "messageContent" placeholder="Type your message" [(ngModel)]="messageContent" required>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+<div *ngIf="!loggedIn">
+  <h2>Please log in to view the chat room.</h2>
+</div>
